@@ -1,0 +1,443 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .fs-1 {
+    @apply text-[clamp(40px,7vw,100px)];
+    }
+    .fs-4 {
+     @apply text-[clamp(18px,2vw,24px)];
+          }
+
+    .fs-5 {
+    @apply text-[clamp(16px,2vw,20px)];
+                        }
+    .hero-btn {
+        @apply w-[40%] fs-5 py-4 rounded-[10px] hover:bg-white/30 transition-all duration-300;
+    }    
+    .card-btn {
+        @apply border rounded-[16px] p-[14px] border-white/50 bg-white/15 hover:bg-white/40 transition-all duration-300;
+    }      
+    .list-btn{
+          @apply bg-white rounded-full px-4 pr-14 flex items-center gap-2 text-[20px]  lg:text-[24px] font-semibold text-black relative hover:bg-gray-200  transition shadow-lg shadow-gray-300/90;
+    }  
+    
+    .select-btn{
+        @apply flex-1 border rounded-md py-2 px-4 text-center hover:bg-white/30 cursor-pointer transition duration-300;
+    }
+
+    .basketBtn{
+        @apply px-3 py-1 hover:bg-zinc-300/30 transition rounded-md;
+    }
+
+    .info-area{
+        @apply flex justify-between items-center ;
+    }
+
+    .desc {
+      @apply  text-gray-500 font-semibold pr-2 ;
+    }
+
+    .price{
+    @apply text-gray-700 font-semibold
+    }
+
+       
+        @media (max-width: 768px) {
+            .modal-container {
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+    
+            .cart-info-container {
+                min-height: auto;
+                padding-bottom: 20px;
+            }
+
+                        /* Sepet ürün kartlarını büyütme */
+                        .cart-item-card {
+                            min-height: 80px !important;
+                            padding: 12px !important;
+                        }
+            
+                        .cart-item-image {
+                            width: 60px !important;
+                            height: 60px !important;
+                        }
+            
+                        .cart-item-title {
+                            font-size: 14px !important;
+                            font-weight: 600 !important;
+                        }
+            
+                        .cart-item-price {
+                            font-size: 16px !important;
+                            font-weight: 700 !important;
+                        }
+            
+                        /* 768px için özel ayarlar */
+                        @media (max-width: 768px) {
+                            .cart-item-card {
+                                min-height: 90px !important;
+                                padding: 14px !important;
+                            }
+            
+                            .cart-item-image {
+                                width: 55px !important;
+                                height: 55px !important;
+                            }
+            
+                            .cart-item-title {
+                                font-size: 15px !important;
+                            }
+            
+                            .cart-item-price {
+                                font-size: 18px !important;
+                            }
+            
+                            /* Sepet modal'ı için */
+                            .cart-modal {
+                                max-height: 75vh !important;
+                            }
+            
+                            .cart-items-container {
+                                max-height: 50vh !important;
+                                overflow-y: auto !important;
+                            }
+
+                            /* Global CSS'e ekleyin */
+@media (max-width: 768px) {
+  /* Cart item'lar için */
+  .cart-item-container {
+    min-height: 100px !important;
+    padding: 12px !important;
+  }
+  
+  .cart-item-image {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  
+  .cart-item-title {
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Sepet modal içeriği için */
+  .cart-modal-content {
+    max-height: 75vh !important;
+    overflow-y: auto !important;
+  }
+  
+  .cart-items-section {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+  }
+  
+  /* Butonlar için */
+  .cart-action-button {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Desktop için */
+@media (min-width: 769px) {
+  .cart-item-container {
+    min-height: 110px !important;
+  }
+  
+  .cart-item-image {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .cart-item-title {
+    font-size: 16px !important;
+  }
+}  }
+}
+/* Global CSS'e ekleyin */
+@media (max-width: 768px) {
+
+    /* Cart item'lar için */
+    .cart-item-container {
+        min-height: 100px !important;
+        padding: 12px !important;
+    }
+
+    .cart-item-image {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .cart-item-title {
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Sepet modal içeriği için */
+    .cart-modal-content {
+        max-height: 75vh !important;
+        overflow-y: auto !important;
+    }
+
+    .cart-items-section {
+        max-height: 50vh !important;
+        overflow-y: auto !important;
+    }
+
+    /* Butonlar için */
+    .cart-action-button {
+        padding: 10px 16px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* Desktop için */
+@media (min-width: 769px) {
+    .cart-item-container {
+        min-height: 110px !important;
+    }
+
+    .cart-item-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .cart-item-title {
+        font-size: 16px !important;
+    }
+}
+
+/* Global CSS'e ekleyin */
+@media (max-width: 768px) {
+
+    /* AmountPicker için */
+    .amount-picker-container {
+        min-height: 40px !important;
+    }
+
+    .amount-btn {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 18px !important;
+    }
+
+    .amount-input {
+        width: 40px !important;
+        height: 32px !important;
+        font-size: 16px !important;
+    }
+
+    /* Type butonları için */
+    .type-btn {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Desktop için */
+@media (min-width: 769px) {
+    .amount-btn {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 20px !important;
+    }
+
+    .amount-input {
+        width: 44px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+    }
+
+    .type-btn {
+        padding: 8px 16px !important;
+        font-size: 14px !important;
+    }
+}
+        /* Sepet modal'ı için */
+        .cart-modal {
+            max-width: 1200px !important;
+            width: 95% !important;
+        }
+    
+        @media (min-width: 768px) {
+            .cart-modal {
+                width: 90% !important;
+                max-width: 1000px !important;
+            }
+    
+            .cart-items-container {
+                max-height: 60vh !important;
+                overflow-y: auto !important;
+            }
+        }
+    
+        @media (min-width: 1024px) {
+            .cart-modal {
+                width: 80% !important;
+                max-width: 1100px !important;
+            }
+        }
+
+                /* Modal container'ı için */
+                .modal-overlay {
+                    z-index: 9999 !important;
+                }
+        
+                .modal-content {
+                    width: 95% !important;
+                    max-width: 1200px !important;
+                    max-height: 90vh !important;
+                    overflow-y: auto !important;
+                }
+        
+                @media (min-width: 768px) {
+                    .modal-content {
+                        width: 90% !important;
+                        max-width: 1100px !important;
+                    }
+                }
+        
+                @media (min-width: 1024px) {
+                    .modal-content {
+                        width: 80% !important;
+                        max-width: 1000px !important;
+                    }
+                }
+
+                /* Modal için responsive ayarlar */
+@media (max-width: 767px) {
+  .modal-container {
+    width: 95vw !important;
+    max-height: 85vh !important;
+  }
+  
+  .cart-items-container {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    width: 90vw !important;
+    max-width: 1200px !important;
+    max-height: 85vh !important;
+  }
+  
+  .modal-content {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  
+  .cart-items-section {
+    flex: 1 !important;
+    max-height: 65vh !important;
+    overflow-y: auto !important;
+  }
+  
+  .cart-info-section {
+    width: 380px !important;
+    max-height: 65vh !important;
+    overflow-y: auto !important;
+  }
+}
+/* Modal için responsive ayarlar */
+@media (max-width: 767px) {
+    .modal-container {
+        width: 95vw !important;
+        max-height: 85vh !important;
+    }
+
+    .cart-items-container {
+        max-height: 50vh !important;
+        overflow-y: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-container {
+        width: 90vw !important;
+        max-width: 1200px !important;
+        max-height: 85vh !important;
+    }
+
+    .modal-content {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .cart-items-section {
+        flex: 1 !important;
+        max-height: 65vh !important;
+        overflow-y: auto !important;
+    }
+
+    .cart-info-section {
+        width: 380px !important;
+        max-height: 65vh !important;
+        overflow-y: auto !important;
+    }
+}
+/* 768px ve üzeri için özel ayarlar */
+@media (min-width: 768px) {
+
+    /* Modal container */
+    .modal-container {
+        width: 95vw !important;
+        max-width: 1200px !important;
+        height: 85vh !important;
+    }
+
+    /* Ürünler bölümü */
+    .cart-items-section {
+        width: 60% !important;
+        max-height: calc(85vh - 80px) !important;
+        overflow-y: auto !important;
+    }
+
+    /* CartInfo bölümü */
+    .cart-info-section {
+        width: 40% !important;
+        max-height: calc(85vh - 80px) !important;
+        overflow-y: auto !important;
+        border-left: 1px solid #e5e7eb !important;
+    }
+
+    /* CardItem için */
+    .cart-item {
+        padding: 16px !important;
+        gap: 16px !important;
+    }
+
+    .cart-item-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .cart-item-title {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* AmountPicker için */
+    .amount-picker-container {
+        min-width: 140px !important;
+    }
+
+    .amount-btn {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 20px !important;
+    }
+
+    .amount-input {
+        width: 44px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+    }
+}
+}
