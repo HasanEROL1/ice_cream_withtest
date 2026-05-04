@@ -35,11 +35,13 @@ AmountPicker gibi kritik bileşenlerde miktar artış/azalış ve Redux dispatch
 Mocking teknikleri (vi.fn(), vi.mock) kullanılarak bağımlılıklardan izole edilmiş güvenilir test senaryoları kurgulanmıştır.
 ```bash
 ⚙️ Kurulum ve Çalıştırma
-Bağımlılıkları yükleyin:
+1. Bağımlılıkları yükleyin:
+
+gh repo clone HasanEROL1/ice_cream_withtest
 
 Bash
 npm install
-API sunucusunu başlatın:
+2. API sunucusunu başlatın:
 
 Bash
     npm run server
@@ -52,4 +54,7 @@ Testleri çalıştırın:
 
 Bash
 npm run test
+```
+
+![demo](ice.gif)
 
